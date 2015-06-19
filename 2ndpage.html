@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/secondstyle.css"/>
+	</head>
+		<body>
+			<div id= "navcontainer">
+				<nav>
+					<ul>
+						<li id="helpbut"><a href="help.asp">Help</a>
+						<li id="refreshbut"><a href="2ndpage.html">Refresh</a></li>
+						<li class="alabel">My Map Marker</li>
+						<li id="logoutbut"><a href="indexmap.html">Log out</a></li>
+						<li id="contactbut"><a href="contact.asp">Contact Us</a>
+					</ul>
+				</nav>
+			</div>
+		<div id="googleMap">
+		</div>
+		<div id="adder">
+    <!--
+			<form method="post" action="">
+      			<p>
+      				<input type="text" name="search" value="" id="searchh"placeholder="Search any coordinates">
+      				</input>
+      				<input type="button" id="searchbut"name="searchbut" value="search">
+      				</input>
+      				<center>
+      					<label id="dontknow">Don't know any coordinates?
+      						<a href="http://www.latlong.net/convert-address-to-lat-long.html">Click here
+      						</a>
+      					</label>
+      				</center>
+      			</p>
+			</form>-->
+      <center>
+        <label id="dontknow">Don't know any coordinates?
+          <a href="http://www.gps-coordinates.net/" target="_blank">Click here
+          </a>
+        </label>
+      </center>
+		</div>
+		<div id= "favbox">
+			<label class="blabel"><center><u>Add a Favorite Location</u></center></label><!-- <form><button name="addnew" id="addnew">Add another new location to the list</button></form>-->
+		<div id="favlist">
+    			<form name="myForm" id="myForm" action="" class="formarea">
+        				<label for="name">Name of Location</label>
+				        <input type="text" name="nameoflocation" />
+				        <label for="latitude">Latitude</label>
+				        <input type="text" name="latitude" />
+				        <label for="longitude">Longitude</label>
+				        <input type="longitude" name="longitude" />
+				        <button name="addlocation" id="addlocation">Add Location</button>
+    				</form>
+    			<!--<li><form name="frmlocation" action="" class="formarea">
+        				<label for="name">Name of Location</label>
+				        <input type="text" name="nameoflocation" />
+				        <label for="latitude">Latitude</label>
+				        <input type="text" name="latitude" />
+				        <label for="longitude">Longitude</label>
+				        <input type="longitude" name="longitude" />
+				        <button name="addlocation" id="addlocation">Add Location</button>
+    				</form>
+    			</li>-->
+			</ol>
+		</div>
+		<div id="bottombar">
+		</div>
+		</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="script.js"></script>
+		</body>
+</html>
